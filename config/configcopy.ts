@@ -38,8 +38,8 @@ export const config: Config = {
         const nextButton = '//*[@type="submit"]';
         const passwordInput = '//*[@id="passwordInput"]';
         const signinButton = '//*[@id="submitButton"]';
-        const email = 'dharani.ramesh@tmnatest.com'; // update with your email
-        const password = 'Test@123'; // update with your password
+        const email = ''; // update with your email
+        const password = ''; // update with your password
         var EC = protractor.ExpectedConditions;
 
         const timeout = 5000000;
@@ -75,7 +75,7 @@ export const config: Config = {
         },
         metadata: {
             app: {
-                name: 'TGPP-UI',
+                name: 'Sample-UI',
                 version: '1.4.5'
             },
             browser: {
@@ -105,16 +105,16 @@ export const config: Config = {
             removeExistingJsonReportFile: true,
             removeOriginalJsonReportFile: true,
             customData: {
-                title: 'TGPP UI',
+                title: 'Sample UI',
                 data: [
-                    { label: 'Project', value: 'TGPP UI Daily Build' },
+                    { label: 'Project', value: 'Sample UI Daily Build' },
                     { label: 'Release', value: '1.0' }, // manual starter
                     { label: 'Cycle', value: 'Sprint-2' },
                     { label: 'Execution Start Time', value: (new Date()).toLocaleString() },
                 ]
             },
-            pageTitle: 'TGPP Review Test Report',
-            reportName: 'TGPP Review Test Report',
+            pageTitle: 'Sample Review Test Report',
+            reportName: 'Sample Review Test Report',
             pageFooter: '<div><p></p></div>',
             displayDuration: true,
             durationInMS: false,
