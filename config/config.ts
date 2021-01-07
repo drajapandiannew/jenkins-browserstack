@@ -46,16 +46,16 @@ export const config: Config = {
 
         browser.driver.manage().deleteAllCookies();
         await browser.get(browser.baseUrl);
-        const emailEle = element(by.xpath(emailInput));
-        const pswdEle = element(by.xpath(passwordInput));
-        await browser.driver.wait(EC.visibilityOf(emailEle), 10000);
-        await browser.driver.findElement(by.xpath(emailInput)).sendKeys(email);
-        await browser.driver.findElement(by.xpath(nextButton)).click();
-        await browser.driver.wait(EC.visibilityOf(pswdEle), 30000);
-        await browser.driver.findElement(by.xpath(passwordInput)).sendKeys(password);
-        await browser.driver.findElement(by.xpath(signinButton)).click();
-        await browser.sleep(1000);
-        await browser.waitForAngularEnabled(true);
+        // const emailEle = element(by.xpath(emailInput));
+        // const pswdEle = element(by.xpath(passwordInput));
+        // await browser.driver.wait(EC.visibilityOf(emailEle), 10000);
+        // await browser.driver.findElement(by.xpath(emailInput)).sendKeys(email);
+        // await browser.driver.findElement(by.xpath(nextButton)).click();
+        // await browser.driver.wait(EC.visibilityOf(pswdEle), 30000);
+        // await browser.driver.findElement(by.xpath(passwordInput)).sendKeys(password);
+        // await browser.driver.findElement(by.xpath(signinButton)).click();
+        // await browser.sleep(1000);
+        // await browser.waitForAngularEnabled(true);
     },
 
     'browserstackUser': 'dhivagarr1',
